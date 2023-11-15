@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Unity Endless Runner Experiment"
-date:   2022-11-19 12:46:54 -0300
+date:   2022-11-19 12:46:00 +0200
 categories: [Classes, INFO-I 304 - Intro to VR]
 tags: [Unity]
 image:
@@ -33,7 +33,7 @@ _A somewhat infinite hallway._
 I've now got a infinite hallway which is awesome! Next step is to make some traps for this hallway to make it a bit more dangerous. The traps can vary wildly in how they present themselves and react to the player, but the one thing they all have in common is they will all cause a game over if you come into contact with one.
 
 ### Fire Fan
-![Desktop View](/assets/img/unity-runner-project/124124.png){: width="70%" .w-50 .left}
+![Desktop View](/assets/img/unity-runner-project/124124.png){: width="215" .w-50 .left}
 The fire fan is a static trap that doesn't move. It creates a pillar of fire originating from the ceiling for the player to dodge. The actual hitbox for the trap is a simple cylinder placed around the fire particle effect and stretches from the ceiling to the floor. Any contact with this hitbox results in a game over and the player would need to restart.
 
 ### Runaway Cart
@@ -41,7 +41,7 @@ The fire fan is a static trap that doesn't move. It creates a pillar of fire ori
 The runaway cart is an active trap that reacts to the player. It takes the form of 2 doorways perfectly across from one another. When the player gets close enough to the doorways, they'll hit an activation trigger which will cause a cart to come barreling out of the left doorway towards the right one. The doorways themselves are harmless, but the cart is dangerous and can cause a game over if the player comes into contact with it. The hitbox for this is a simple cubic shape as there isn't a need to get more specific than that. Fun fact, when I originally had the idea for this trap, I was thinking of a laboratory cart with vials and other things on it. When I went looking for appropriate assets on the Unity Asset store though, I found this medieval-looking wooden cart and thought it'd be fun to use that instead. I guess this laboratory you end up running through specializes in either wooden carts or time travel!
 
 ### The Wall
-![Desktop View](/assets/img/unity-runner-project/111917.png){: width="100%" .w-50 .left}
+![Desktop View](/assets/img/unity-runner-project/111917.png){: width="300" .w-50 .left}
 This one was just something I personally thought was funny. There's a door at the end of each hallway the player has to run through in order to continue the loop and keep playing. If you miss the door and hit the wall instead, it will cause a unique death animation to play and your game is over. Simple yet effective!
 
 ### Random Generation
@@ -60,7 +60,7 @@ If I just left the current code as is, Unity would keep generating traps forever
 {: .prompt-info }
 {% include embed/endless_runner_game/endless_runner_game.html %}
 
-{% include embed/shields/github_archive.html url='https://github.com/hypertacos520/I304-Unity-Runner-Project' %} {% include embed/shields/external_site.html url='https://hypertacos520.github.io/I304-Unity-Runner-Project/' %}
+{% include embed/shields/github_archive.html url='https://github.com/hypertacos520/I304-Unity-Runner-Project' %} {% include embed/shields/internal_site.html url='https://www.dawsonthompson.com/I304-Unity-Runner-Project/' %}
 
 ## Final Thoughts
 As you may have seen when trying out the game, it's not without it's problems. For example, there is no way to reset your character if you run into an obstacle besides refreshing the webpage. If given more time, I think I'd like to add more variety of traps, some extra animations for the existing traps, fix the partical pop-in issue, and add a retry button. Overall though, I'm very happy with how this came out. It was a great game design experiment and I think it's definitely helped me learn a lot about how to build functional 3D environments.

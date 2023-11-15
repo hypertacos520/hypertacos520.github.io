@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Time Isn't Working"
-date:   2023-11-2 12:30:54 -0300
+date:   2023-11-2 12:30:54 +0200
 categories: [General]
 tags: []
 ---
