@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Endless_Runner_Project</title>
-    <link rel="stylesheet" href="/assets/unity/TemplateData/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/unity/TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -54,13 +54,13 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "/assets/unity/endless-runner-game/Build";
+      var buildUrl = "{{ site.baseurl }}/assets/unity/endless-runner-game/Build";
       var loaderUrl = buildUrl + "/Runner_Project_WebGL.loader.js";
       var config = {
         dataUrl: buildUrl + "/Runner_Project_WebGL.data",
         frameworkUrl: buildUrl + "/Runner_Project_WebGL.framework.js",
         codeUrl: buildUrl + "/Runner_Project_WebGL.wasm",
-        streamingAssetsUrl: "/assets/unity/endless-runner-game/StreamingAssets",
+        streamingAssetsUrl: "{{ site.baseurl }}/assets/unity/endless-runner-game/StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Endless_Runner_Project",
         productVersion: "1.0",

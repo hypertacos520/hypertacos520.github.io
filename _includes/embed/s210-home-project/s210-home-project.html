@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Endless_Runner_Project</title>
-    <link rel="stylesheet" href="/assets/unity/TemplateData/style.css">
+    <title>Unity WebGL Player | S210_Home_Project</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/unity/TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -54,15 +54,15 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "/assets/unity/S210-home-project/Build";
+      var buildUrl = "{{ site.baseurl }}/assets/unity/S210-home-project/Build";
       var loaderUrl = buildUrl + "/9bc3f1f98d8a60f4a893dfd82ec5ca3c.js";
       var config = {
         dataUrl: buildUrl + "/73855f0ff5fa59014aa8a75508504578.data.unityweb",
         frameworkUrl: buildUrl + "/3dc1c14cecee445b01ea7e0a7f226588.js.unityweb",
         codeUrl: buildUrl + "/4b631af8d3f85dba7e61bf2fdcee2714.wasm.unityweb",
-        streamingAssetsUrl: "/assets/unity/endless-runner-game/StreamingAssets",
+        streamingAssetsUrl: "{{ site.baseurl }}/assets/unity/endless-runner-game/StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Endless_Runner_Project",
+        productName: "S210_Home_Project",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
