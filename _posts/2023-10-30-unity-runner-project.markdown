@@ -60,7 +60,7 @@ If I just left the current code as is, Unity would keep generating traps forever
 {: .prompt-info }
 {% include embed/endless_runner_game/endless_runner_game.html %}
 
-{% include embed/shields/github_archive.html url='https://github.com/hypertacos520/I304-Unity-Runner-Project' %} {% include embed/shields/internal_site.html url='https://www.dawsonthompson.com/I304-Unity-Runner-Project/' %}
+{% include embed/shields/github_archive.html url='https://github.com/hypertacos520/I304-Unity-Runner-Project' %} {% include embed/shields/github_pages.html url='https://www.dawsonthompson.com/I304-Unity-Runner-Project/' %}
 
 ## Final Thoughts
 As you may have seen when trying out the game, it's not without it's problems. For example, there is no way to reset your character if you run into an obstacle besides refreshing the webpage. If given more time, I think I'd like to add more variety of traps, some extra animations for the existing traps, fix the partical pop-in issue, and add a retry button. Overall though, I'm very happy with how this came out. It was a great game design experiment and I think it's definitely helped me learn a lot about how to build functional 3D environments.
