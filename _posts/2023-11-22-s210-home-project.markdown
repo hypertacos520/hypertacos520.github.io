@@ -36,3 +36,6 @@ To help bring the world to life, I added some scripted interactions. By pressing
 {% include embed/s210-home-project/s210-home-project.html %}
 
 {% include embed/shields/github_archive.html url='https://github.com/hypertacos520/S210-Home-Unity-Project' %} {% include embed/shields/github_pages.html url='https://www.dawsonthompson.com/S210-Home-Unity-Project/' %}
+
+> Sometimes this embedded player will display an old build of the project somehow. If you'd like to ensure you're trying the newest version, you can try the [`Github Pages`](https://www.dawsonthompson.com/S210-Home-Unity-Project/) link.
+{: .prompt-warning }
