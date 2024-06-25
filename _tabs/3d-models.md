@@ -16,7 +16,7 @@ order: 5
    image="https://cdn.thingiverse.com/assets/20/f7/b1/54/97/large_display_c40f3e00-d85a-40f3-9bd6-cea3b801ba7e.png"
    name="Dell WD15 Vesa Mount"
    username="hypertacos2"
-   description="Toolless Vesa Mount for Dell WD15 USB-C docking station." %}
+   description="Toolless Vesa Mount for Dell WD15 USB-C docking station." %}{: .w-50 .right}
 
 {% include embed/thingiverse-design.html
    url="https://www.thingiverse.com/thing:5560093"
@@ -30,4 +30,4 @@ order: 5
    image="https://cdn.thingiverse.com/assets/e4/9f/bf/6f/4f/large_display_74a596d6-8447-48bb-aa86-bce07b480a93.jpg"
    name="Makerfarm Prusa i3v 10 Custom Parts"
    username="hypertacos2"
-   description="Custom designed parts with the goal of restoring the Prusa i3v 10 to its former glory!" %}
+   description="Custom designed parts with the goal of restoring the Prusa i3v 10 to its former glory!" %}{: .w-50 .right}
