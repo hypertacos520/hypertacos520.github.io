@@ -1,0 +1,54 @@
+<style>
+  .thingiverse-card {
+    border: 1px solid var(--main-border-color); /* inherit */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+    box-shadow: var(--card-shadow); /* 0 4px 8px rgba(0, 0, 0, 0.1) */
+    background-color: var(--card-bg);
+    transition: transform 0.2s, background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .thingiverse-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .thingiverse-card a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  .thingiverse-card-image {
+    width: 100%;
+    padding-top: 56.25%; 
+    background-size: contain; 
+    background-position: center;
+    background-color: var(--card-bg);
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .thingiverse-card-content {
+    padding: 15px;
+  }
+  
+  .thingiverse-card-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.25em;
+  }
+  
+  .thingiverse-card-content p {
+    margin: 0;
+  }
+</style>
+  
+<div class="thingiverse-card">
+  <a href="{{ include.url }}" target="_blank">
+    <div class="thingiverse-card-image" style="background-image: url('{{ include.image }}');"></div>
+    <div class="thingiverse-card-content">
+      <h3>{{ include.name }}</h3>
+      <p>{{ include.description }}</p>
+      <a href="https://www.thingiverse.com/{{ include.username }}" target="_blank" rel="noopener noreferrer"><img alt="Thingiverse {{ include.username }}" src="https://img.shields.io/badge/Thingiverse-{{ include.username }}-dark_green?logo=thingiverse&&color=2596be"></a>
+    </div>
+  </a>
+</div>

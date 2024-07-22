@@ -6,7 +6,7 @@ order: 5
 
 {% include embed/thingiverse-design.html
    url="https://www.thingiverse.com/thing:5547503"
-   image="/assets/img/3d-models/large_display_5f372e80-811c-4ced-80bc-4470e418c418.webp"
+   image="/assets/img/3d-models/steam-deck-dock"
    name="Steam Deck Docking Station"
    username="hypertacos2"
    description="A toolless Nintendo-Switch inspired docking station for the Steam Deck." %}
@@ -20,14 +20,14 @@ order: 5
 
 {% include embed/thingiverse-design.html
    url="https://www.thingiverse.com/thing:5560093"
-   image="/assets/img/3d-models/large_display_417deec2-b8c8-4a36-bef4-3bbff10a77bc.webp"
+   image="/assets/img/3d-models/rv-cupholder"
    name="RV Replacement Cupholder"
    username="hypertacos2"
    description="Replacement Cupholder for some older style RVs." %}
 
 {% include embed/thingiverse-design.html
    url="https://www.thingiverse.com/thing:5561209"
-   image="/assets/img/3d-models/large_display_74a596d6-8447-48bb-aa86-bce07b480a93.jpg"
+   image="/assets/img/3d-models/prusa-i3v-10-restoration"
    name="Makerfarm Prusa i3v 10 Custom Parts"
    username="hypertacos2"
    description="Custom designed parts with the goal of restoring the Prusa i3v 10 to its former glory!" %}
