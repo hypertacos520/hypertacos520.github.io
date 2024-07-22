@@ -1,21 +1,12 @@
 <style>
-  [data-mode="dark"] .thingiverse-card-content {
-    background-color: #1b1b1e; /* Dark mode background color */
-    color: #ffffff; /* Dark mode text color */
-  }
-
-  [data-mode="light"] .thingiverse-card-content {
-    background-color: #ffffff; /* Light mode background color */
-    color: #000000; /* Light mode text color */
-  }
-
   .thingiverse-card {
-    border: inherit; /* inherit */
+    border: 1px solid var(--main-border-color); /* inherit */
     border-radius: 10px;
     overflow: hidden;
     margin: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    box-shadow: var(--card-shadow); /* 0 4px 8px rgba(0, 0, 0, 0.1) */
+    background-color: var(--card-bg);
+    transition: transform 0.2s, background-color 0.3s ease, color 0.3s ease;
   }
   
   .thingiverse-card:hover {
@@ -24,7 +15,7 @@
   
   .thingiverse-card a {
     text-decoration: none;
-    color: inherit;
+    color: var(--text-color);
   }
   
   .thingiverse-card-image {
@@ -32,13 +23,13 @@
     padding-top: 56.25%; 
     background-size: contain; 
     background-position: center;
-    background-color: #f5f5f5;
+    background-color: var(--card-bg);
     background-repeat: no-repeat;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
   .thingiverse-card-content {
     padding: 15px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background color and text color */
   }
   
   .thingiverse-card-content h3 {
@@ -57,9 +48,7 @@
     <div class="thingiverse-card-content">
       <h3>{{ include.name }}</h3>
       <p>{{ include.description }}</p>
-      <a href="https://www.thingiverse.com/{{ include.username }}" target="_blank" rel="noopener noreferrer">
-        <img alt="Thingiverse {{ include.username }}" src="https://img.shields.io/badge/Thingiverse-{{ include.username }}-dark_green?logo=thingiverse&&color=2596be">
-      </a>
+      <a href="https://www.thingiverse.com/{{ include.username }}" target="_blank" rel="noopener noreferrer"><img alt="Thingiverse {{ include.username }}" src="https://img.shields.io/badge/Thingiverse-{{ include.username }}-dark_green?logo=thingiverse&&color=2596be"></a>
     </div>
   </a>
 </div>
