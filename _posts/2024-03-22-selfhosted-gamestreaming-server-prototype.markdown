@@ -3,7 +3,7 @@ layout: post
 title:  "Selfhosted Gamestreaming Server Prototype"
 date:   2024-03-22 1:30:00 +0200
 categories: [Projects, Selfhosted Gamestream Service]
-tags: [Virtual Machine, Networking, Streaming]
+tags: [Virtual Machine, Networking, Streaming, KVM]
 ---
 ## Overview
 Ever since I was young, I was really interested in the idea of gamestream as a technology. The idea that you could play a home console quality game on something like a smartphone with minimal battery impact and low latency was basically like magic at the time. Of course, it didn't quite work out that way in practice back then. The standard for mobile infastructure was 3G or 4G if you were lucky, home networks could very commonly have a grand total of 2mb bandwith to use for the entire house, and consumer grade PCs in general weren't all that reliable.

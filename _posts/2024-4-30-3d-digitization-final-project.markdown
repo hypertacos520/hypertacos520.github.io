@@ -3,7 +3,7 @@ layout: post
 title:  "3D Digitization Final Project"
 date:   2024-04-29 12:46:00 +0200
 categories: [Classes, INFO-I 590 - 3D Digitization]
-tags: [Agisoft Metashape, Photogrammetry]
+tags: [Agisoft Metashape, Photogrammetry, 3D Design]
 image:
   path: /assets/img/i590-3d-digitization-final-project/finished-model.png
   alt: 3D object of a shoe created with Agisoft Metashape
