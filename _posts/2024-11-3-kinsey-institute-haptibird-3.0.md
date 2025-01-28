@@ -104,7 +104,6 @@ Adding split screen functionality was as simple as using the two cameras we made
 ![Desktop View](/assets/img/kinsey-institute-haptibird-3.0/Screenshot from 2024-11-25 22-49-10.png){: width="auto" .w-50 .right}
 ![Desktop View](/assets/img/kinsey-institute-haptibird-3.0/Screenshot from 2024-11-25 22-49-31.png){: width="auto" .w-50 .right}
 There also needs to be an object that players can interact with in order to gain or lose money. The coin object is designed to do just that and is actually quite a bit complicated for what it is. The coin consists of two primary pieces; the floating cube object, and an invisible wall that acts as a trigger. A script is applied to the trigger object that handles a lot of the logic for the coin's value. Upon a new instance of this coin being created in game, it will randomly assign itself a value between two dollar amounts such as -$5 and $5. Upon determining this amount, it sets the color of the cube object and any conncted particle effects to red if the value is negative, and green if the value is positive. After all this setup occurs, the coin monitors and looks for if it's been interacted with by a player. The interaction in this case is touching the trigger plane, and both players need to do this. If both players have touched the coin, it will play a particle effect, then add it's value to the total score of each individual player.
-{Code Below} 
 
 ### Walls
 There's also a wall object that affects the players score in a similar way. The primary difference is that this wall object only needs to be touched by one player to be triggered. Once it's triggered, a penalty can be applied to each players score and a particle effect of the wall breaking will play. The penalty by default is $2 but can be adjusted to any value desired.
@@ -188,7 +187,7 @@ Now that we have an object for generating the walls, we can work on the infinite
 Old level segments MUST be deleted when designing something like this. Since the game is designed to go on forever, you'll run into a "Out of Memory" error if you let it run long enough. Granted this might be awhile on modern machines since they tend to have a lot of RAM, but this is just good practice.
 
 ## Whats the Theme?
-The time has finally come to decide upon a theme. Why do we need one? Well we could keep it like it is, but I don't think players will be very invested in the gameplay if each player is just a differently colored sphere traversing a generic orange hallway. Collectively as a team, we brainstormed potential options for a theme and eventually space was thrown out as an option. After a unanimus vote, it was time to start designing the new theme!
+The time has finally come to decide upon a theme. The reason we need this is primarily to add some more visual interest to the gameplay. Collectively as a team, we brainstormed potential options for a theme and eventually space was thrown out as an option. After a unanimus vote, it was time to start designing the new theme!
 
 ### Stars and the Night Sky
 ![Desktop View](/assets/img/kinsey-institute-haptibird-3.0/Screenshot from 2024-11-25 23-20-56.png){: width="auto" .w-50 .right}
@@ -198,7 +197,33 @@ First things first, we need the space part. There's any number of different ways
 Now where did I start with this "Illusion of Space"? I started at the camera controller. Each camera within a unity scene has a bunch of features you can modify about how it percieves the environment. To create a good base for the space environment, I told each camera to only render the color black as the skybox instead of the styleized Unity default. This already made it look a lot more like the deep darkness of space, but it was missing a key element: the stars!
 
 This is where the illusion element comes into play. To create the stars in the sky of space, I actually just used two particle emitters that constantly created star-like particles with white light emitters on them. Since the cameras of each player are for the most part fixed at the same distance and always pointing in the same direction, you can create a wall of star-like particles in the distance to create the feeling of far away stars! Then all you need to do to keep the illusion alive is to make sure the stars are always a fixed distance from the player's current position with a script which I have outlined below. This by itself will work and create a very convincing space skybox, but to make it feel a bit more alive, a second particle emitter can be used. The job of the second particle emitter is to create a cone of stars moving towards the players with the origin set far in front of them. This creates the feeling of passing incoming stars and moving through space rather than just looking at it from a distance.
-{INSERT THE SCRIPT}
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class starsLock : MonoBehaviour
+{
+    public Transform target; // This is the target object we're obtaining the Z axis position from
+    private Vector3 offset;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        offset = transform.position - target.position;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        // We're only lerping the stars to make it not jittery. It's not really requires since they're so far away
+        // But also any time you can move things smoothly it's good.
+        transform.position = new Vector3(transform.position.x, transform.position.y, Vector3.Lerp(this.transform.position, target.position + offset, Time.deltaTime).z);
+    }
+}
+```
+
 With this, the sky is mostly complete. I wanted to add a little something extra so it acutally looks like you're going somewhere as you move infinitely into the distance, so I also added a planet earth that is constantly moving away from the players so it maintains that skybox look.
 
 ### The Ground & Asteroids
