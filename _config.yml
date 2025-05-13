@@ -165,6 +165,11 @@ defaults:
     values:
       swcache: true
 
+# Directories and files with _ at the beginning are excluded by default.
+# To force them to work correctly, you must include them here.
+include:
+  - _pages
+
 sass:
   style: compressed
 
