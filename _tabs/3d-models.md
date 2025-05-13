@@ -5,6 +5,13 @@ order: 5
 ---
 
 {% include embed/thingiverse-design.html
+   url="https://www.thingiverse.com/thing:7036975"
+   image="/assets/img/3d-models/kaypro-keyboard-reinforcement"
+   name="Kaypro Keyboard RJ11 4P4C Port Reinforcement"
+   username="hypertacos2"
+   description="A small reinforcement bracket for the 4P4C port on the Kaypro Keyboards. Built to help prevent the H bracket at the back of the connector from snapping. " %}
+
+{% include embed/thingiverse-design.html
    url="https://www.thingiverse.com/thing:5547503"
    image="/assets/img/3d-models/steam-deck-dock"
    name="Steam Deck Docking Station"
