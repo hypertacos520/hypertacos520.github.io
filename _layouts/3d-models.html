@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<h1>3D Model Gallery</h1>
+
+<ul>
+  {% assign models = site['3d-models'] | sort: "date" | reverse %}
+  {% for model in models %}
+    <li>
+      {% include embed/thingiverse-design.html
+        thingiverse-id=model.thingiverse-id
+        page-url=model.url
+        image=model.images
+        name=model.title
+        date=model.date
+        description=model.content %}
+    </li>
+  {% endfor %}
+</ul>
+
+

@@ -135,6 +135,9 @@ collections:
   tabs:
     output: true
     sort_by: order
+  3d-models:
+    output: true
+    permalink: /3d-models/:title/
 
 defaults:
   - scope:
@@ -165,6 +168,12 @@ defaults:
       path: assets/js/dist
     values:
       swcache: true
+  - scope:
+      path: ""
+      type: 3d-model
+    values:
+      layout: page
+      permalink: /3d-models/:title/
 
 # Directories and files with _ at the beginning are excluded by default.
 # To force them to work correctly, you must include them here.

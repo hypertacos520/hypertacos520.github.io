@@ -88,7 +88,7 @@
 <body>
 
   <div class="thingiverse-card">
-    <a href="{{ include.url }}" target="_blank">
+    <a href="{{ include.page-url }}" target="_blank">
       <!-- Swiper -->
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -96,7 +96,7 @@
           {% for image in site.static_files %}
             {% if image.path contains image_dir %}
               <div class="swiper-slide">
-                <img src="{{ image.path | relative_url }}" alt="Thingiverse Image">
+                <img src="{{ image.path | relative_url }}" alt="3D Model Image">
               </div>
             {% endif %}
           {% endfor %}
@@ -108,9 +108,14 @@
         <div class="swiper-button-prev"></div>
       </div>
       <div class="thingiverse-card-content">
-        <h3>{{ include.name }}</h3>
+        <h3>
+          {{ include.name }}
+          <span style="font-size: 0.8em; font-weight: normal; color: var(--text-color); margin-left: 0.5em;">
+            {{ include.date | date: "%m-%d-%Y" }}
+          </span>
+        </h3>        
         <p>{{ include.description }}</p>
-        <a href="https://www.thingiverse.com/{{ include.username }}" target="_blank" rel="noopener noreferrer"><img alt="Thingiverse {{ include.username }}" src="https://img.shields.io/badge/Thingiverse-{{ include.username }}-dark_green?logo=thingiverse&&color=2596be"></a>  <a href="{{ include.url }}" target="_blank" rel="noopener noreferrer"><img alt="Model Details" src="https://img.shields.io/badge/Model Details-dark_green?color=2596be"></a>
+        <a href="https://www.thingiverse.com/thing:{{ include.thingiverse-id }}" target="_blank" rel="noopener noreferrer"><img alt="Thingiverse {{ include.thingiverse-id }}" src="https://img.shields.io/badge/Thingiverse-{{ include.thingiverse-id }}-dark_green?logo=thingiverse&&color=2596be"></a>  <a href="{{ include.page-url }}"><img alt="View Details" src="https://img.shields.io/badge/View Details-dark_green?color=2596be"></a>
       </div>
     </a>
   </div>
