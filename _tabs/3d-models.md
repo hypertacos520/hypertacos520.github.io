@@ -5,6 +5,13 @@ order: 5
 ---
 
 {% include embed/thingiverse-design.html
+   url="https://www.thingiverse.com/thing:7042500"
+   image="/assets/img/3d-models/anker-mag-go-stand-10k-variant"
+   name="Anker Mag-Go Stand 10K Variant"
+   username="hypertacos2"
+   description="A modified variant to fit the 10K version of the Mag-Go battery pack. Also includes a nice little cutout for accessing the power button." %}
+
+{% include embed/thingiverse-design.html
    url="https://www.thingiverse.com/thing:7036975"
    image="/assets/img/3d-models/kaypro-keyboard-reinforcement"
    name="Kaypro Keyboard RJ11 4P4C Port Reinforcement"
