@@ -2,7 +2,7 @@
 layout: post
 title:  "Digital Representation of Home"
 date:   2021-12-05 3:15:00 +0200
-categories: [Classes, SOAD-S 210 - Intro to Digital Art]
+categories: [Projects, College]
 tags: [Unity, Fusion 360, ProBuilder]
 image:
   path: /assets/img/s210-home-project/002514.png

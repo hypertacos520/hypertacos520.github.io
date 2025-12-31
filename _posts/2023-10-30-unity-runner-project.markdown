@@ -2,7 +2,7 @@
 layout: post
 title:  "Unity Endless Runner Experiment"
 date:   2022-11-19 12:46:00 +0200
-categories: [Classes, INFO-I 304 - Intro to VR]
+categories: [Projects, College]
 tags: [Unity]
 image:
   path: /assets/img/unity-runner-project/unity_runner_project.png
