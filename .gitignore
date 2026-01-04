@@ -1,3 +1,6 @@
+# OS Level Stuff
+.DS_Store
+
 # Bundler cache
 .bundle
 vendor

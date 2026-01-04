@@ -25,7 +25,7 @@ One of the original services that offered a seamless streaming experience was [N
 _"[Shield Portable from NVIDIA Project SHIELD](https://www.flickr.com/photos/13815526@N02/8357278985)" by [Pierre Lecourt](https://www.flickr.com/photos/13815526@N02/) is licensed under [CC BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/)[^shield-portable]_
 
 ### Sunshine & Moonlight
-[Moonlight](https://moonlight-stream.org/) is an alternative client for the Gamestream protocol that can be used on (almost) any device. This already opened up the protocol a lot but more recently a new open source project has appeared. [Sunshine](https://docs.lizardbyte.dev/projects/sunshine/en/latest/about/overview.html) is an alternative server for the Gamestream protocol and works on not only NVIDIA GPU based machines, but any machine that's capable of running high end games on most of the major desktop operating systems. 
+[Moonlight](https://moonlight-stream.org/) is an alternative client for the Gamestream protocol that can be used on (almost) any device. This already opened up the protocol a lot but more recently a new open source project has appeared. [Sunshine](https://docs.lizardbyte.dev/projects/sunshine) is an alternative server for the Gamestream protocol and works on not only NVIDIA GPU based machines, but any machine that's capable of running high end games on most of the major desktop operating systems. 
 
 These two projects have cracked the protocol wide open and made it extremely versatile! 
 
